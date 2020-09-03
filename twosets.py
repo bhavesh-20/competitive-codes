@@ -1,19 +1,18 @@
 n=int(input())
-l=[x for x in range(1,n+1)]
 ans1=[]
 ans2=[]
 z=1
 if n%4==0:
     print("YES")
-    for i in range(n//2):
+    for i in range(1,n//2+1):
         if z==1:
             z=0
-            ans1.append(l[i])
-            ans1.append(l[n-i-1])
+            ans1.append(i)
+            ans1.append(n-i+1)
         else:
             z=1
-            ans2.append(l[i])
-            ans2.append(l[n-i-1])
+            ans2.append(i)
+            ans2.append(n-i+1)
     print(len(ans1))
     for i in ans1:
         print(i,end=' ')
@@ -26,17 +25,15 @@ elif n%4==3:
     ans1.append(1)
     ans1.append(2)
     ans2.append(3)
-    a=l[3:]
-    m=len(a)
-    for i in range(len(a)//2):
+    for i in range(4,4+(n-4)//2+1):
         if z==1:
             z=0
-            ans1.append(a[i])
-            ans1.append(a[m-i-1])
+            ans1.append(i)
+            ans1.append(n-i+4)
         else:
             z=1
-            ans2.append(a[i])
-            ans2.append(a[m-i-1])
+            ans2.append(i)
+            ans2.append(n-i+4)
     print(len(ans1))
     for i in ans1:
         print(i,end=' ')
