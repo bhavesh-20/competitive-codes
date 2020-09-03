@@ -1,3 +1,4 @@
+#https://cses.fi/problemset/task/1092
 n=int(input())
 ans1=[]
 ans2=[]
