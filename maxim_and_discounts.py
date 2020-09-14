@@ -1,3 +1,4 @@
+#https://codeforces.com/problemset/problem/261/A
 nq=int(input())
 q=[int(x) for x in input().split()]
 n=int(input())
