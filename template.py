@@ -15,13 +15,17 @@ strl   =lambda: list(input().strip())
 mul    =lambda: map(int,input().strip().split())
 mulf   =lambda: map(float,input().strip().split())
 seq    =lambda: list(map(int,input().strip().split()))
+lis    =lambda: list(input().strip().split())
 
 ceil   =lambda x: int(x) if(x==int(x)) else int(x)+1
 ceildiv=lambda x,d: x//d if(x%d==0) else x//d+1
 
 flush  =lambda: stdout.flush()
-stdstr =lambda: stdin.readline()
+stdstr =lambda: stdin.readline().strip()
 stdint =lambda: int(stdin.readline())
+stdmul =lambda: map(int,stdin.readline().strip().split())
+stdseq =lambda: list(map(int,stdin.readline().strip().split()))
+stdlis =lambda: list(stdin.readline().strip().split())
 stdpr  =lambda x: stdout.write(str(x))
 
 mod=1000000007
@@ -110,7 +114,7 @@ def sieve(primes):
 		j+=2
 
 def main():
-    pass
+	pass
 
 
 if __name__ == '__main__':
