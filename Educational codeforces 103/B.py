@@ -9,4 +9,4 @@ for _ in range(int(input())):
         number = math.ceil((100*a[i])/k)
         if s<number:
             s=number
-    print(s-a[0])
+    print(s-a[0])   
